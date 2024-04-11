@@ -38,7 +38,8 @@ public class D3Test {
   public void setUp() {
     ChromeOptions options = new ChromeOptions();
     options.addArguments("--headless");
-    driver = new ChromeDriver(options);
+    driver = new ChromeDriver(options);    js = (JavascriptExecutor) driver;
+    vars = new HashMap<String, Object>();
   }
   @After
   public void tearDown() {
