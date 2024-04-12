@@ -41,7 +41,7 @@ public class D3Test {
     driver = new ChromeDriver(options);
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
-  }
+  } 
   @After
   public void tearDown() {
     driver.quit();
